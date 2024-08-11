@@ -1,0 +1,30 @@
+.main-main {
+    display: flex; /* Assuming you want flex layout for children */
+    flex-direction: row;
+  }
+  
+  .save-screen {
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(16, 0, 0);
+    position: relative; /* Set positioning context for absolute positioning of elements */
+  }
+  
+  .image-container {
+    position: relative; /* Ensure title and NavBar can be positioned inside this container */
+    max-width: 100%; /* Ensure the container takes up the full width available */
+    max-height: 100%; /* Ensure the container takes up the full height of the parent */
+    width: 100%; /* Full width of the save-screen */
+    height: 100%; /* Full height of the save-screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow of image */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ensure image fits within container */
+    max-height: 100%; /* Ensure image fits within container */
+    object-fit: cover; /* Maintain aspect ratio while resizing image */
+  }
+  
